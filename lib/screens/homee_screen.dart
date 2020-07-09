@@ -79,11 +79,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     Future<List<Barang>> hasil =
                         dbHelper.cariBarang(nama, null);
                     future = hasil;
-                    print(nama);
-                    // return Navigator.push(context,
-                    //     MaterialPageRoute(builder: (BuildContext context) {
-                    //   return ListScreen(result);
-                    // }));
                   });
                 },
                 style: TextStyle(color: Colors.white70, fontSize: 18),

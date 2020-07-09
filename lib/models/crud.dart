@@ -79,40 +79,4 @@ class CRUD {
       return items;
     }
   }
-
-  // Future<int> update(Barang todo) async {
-  //   Database db = await dbHelper.initDb();
-  //   final sql = '''UPDATE ${CRUD.todoTable}
-  //   SET ${CRUD.nama} = ?, ${CRUD.harga}
-  //   WHERE ${CRUD.id} = ?
-  //   ''';
-  //   List<dynamic> params = [todo.nama, todo.harga, todo.id];
-  //   final result = await db.rawUpdate(sql, params);
-  //   return result;
-  // }
-
-  //   AccesDatabase dbHelper = new AccesDatabase();
-// Future<int> insert(Barang todo) async {
-//     Database db = await dbHelper.initDb();
-//     int count = await db.insert('barang', todo.toMap());
-//     return count;
-//   }
-
-// Future<int> delete(Barang todo) async {
-//     Database db = await dbHelper.initDb();
-//     int count =
-//         await db.delete('barang', where: 'id=?', whereArgs: [todo.id]);
-//     return count;
-//   }
-// Future<List<Barang>> getbarangList() async {
-//     Database db = await dbHelper.initDb();
-//     List<Map<String, dynamic>> mapList =
-//         await db.query('barang', orderBy: 'nama');
-//     int count = mapList.length;
-//     List<Barang> barangList = List<Barang>();
-//     for (int i = 0; i < count; i++) {
-//       barangList.add(Barang.fromMap(mapList[i]));
-//     }
-//     return barangList;
-//   }
 }

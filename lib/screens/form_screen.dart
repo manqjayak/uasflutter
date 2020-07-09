@@ -92,7 +92,7 @@ class EntryFormState extends State<EntryForm> {
                   padding: EdgeInsets.all(25),
                   child: TextField(
                     controller: lokasiController,
-                    keyboardType: TextInputType.phone,
+                    keyboardType: TextInputType.text,
                     decoration: InputDecoration(
                       labelText: 'Lokasi',
                       border: OutlineInputBorder(
